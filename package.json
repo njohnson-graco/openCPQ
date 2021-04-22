@@ -17,27 +17,27 @@
   "bugs": "https://github.com/webXcerpt/openCPQ/issues",
   "license": "MIT",
   "scripts": {
-    "compile": "./node_modules/.bin/rimraf dst; ./node_modules/.bin/ncp src dst; ./node_modules/.bin/babel src --out-dir dst --source-maps",
+    "compile": "yarn run rimraf dst; ncp src dst; babel src --out-dir dst --source-maps",
     "watch": "./node_modules/.bin/babel src --out-dir dst --watch --source-maps",
     "prepublish": "npm run compile"
   },
   "main": "dst/index.js",
   "peerDependencies": {
-    "browser-filesaver": "^1.0.0",
-    "react": "^0.13.1",
-    "react-bootstrap": "^0.20.1",
-    "react-widgets": "^2.4.1"
+    "browser-filesaver": "^1.1.1",
+    "react": "^17.0.2",
+    "react-bootstrap": "^1.5.2",
+    "react-widgets": "^5.0.3"
   },
   "devDependencies": {
-    "babel-cli": "^6.1.2",
-    "babel-preset-es2015": "^6.1.2",
-    "babel-preset-react": "^6.1.2",
-    "babel-preset-stage-1": "^6.1.2",
-    "browser-filesaver": "^1.0.0",
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-1": "^6.24.1",
+    "browser-filesaver": "^1.1.1",
     "ncp": "^2.0.0",
-    "react": "^0.13.1",
-    "react-bootstrap": "^0.20.1",
-    "react-widgets": "^2.4.1",
-    "rimraf": "^2.4.3"
+    "react": "^17.0.2",
+    "react-bootstrap": "^1.5.2",
+    "react-widgets": "^5.0.3",
+    "rimraf": "^3.0.2"
   }
 }
